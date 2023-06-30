@@ -1,0 +1,463 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --red: hsl(0, 100%, 67%);
+    --orange: hsl(39, 100%, 56%);
+    --green: hsl(166, 100%, 37%);
+    --blue: hsl(234, 85%, 45%);
+    --grad-slate-blue: hsl(252, 100%, 67%);
+    --grad-royal-blue: hsl(241, 81%, 54%);
+    --circle-violet: hsla(256, 72%, 46%, 1);
+    --circle-persian: hsla(241, 72%, 46%, 0);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-laveder: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper .top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    background: linear-gradient(to bottom, var(--grad-slate-blue), var(--grad-royal-blue));
+    color: #fff;
+    border-radius: 0 0 25px 25px;
+    
+}
+
+.top-container .title p {
+    font-weight: 700;
+    color: var(--light-laveder);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.top-container .circle {
+    background: linear-gradient(to top, var(--circle-persian), var(--circle-violet));
+    border-radius: 50%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    margin-top: 0.5rem;
+}
+
+.animate-1 {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    animation: slide-in-1 2s ease-in-out;
+}
+.animate-2 {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    animation: slide-in-2 1s ease-in-out;
+}
+.animate-3 {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    animation: slide-in-3 1s ease-in-out;
+}
+.animate-4 {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    animation: slide-in-4 1s ease-in-out;
+}
+.animate-5 {
+    position: relative;
+    left: 0;
+    opacity: 1;
+    animation: slide-in-5 1s ease-in-out;
+}
+
+@keyframes slide-in-1 {
+  from {
+    top: 100px;
+    opacity: 0.1;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-2 {
+
+  from {
+
+    left: -20px;
+    opacity: 0.1;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-3{
+
+  from {
+
+    left: -40px;
+    opacity: 0.1;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-4 {
+
+  from {
+
+    left: -60px;
+    opacity: 0.1;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-5 {
+
+  from {
+
+    left: -80px;
+    opacity: 0.1;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+
+
+
+.top-container .circle h1 {
+    font-size: 2.5rem;
+    
+    
+}
+
+.top-container .circle p {
+    font-size: 12px;
+    color: var(--light-laveder);
+    margin-bottom: 0.5rem;
+}
+
+.top-container .score {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-container .score h2 {
+    font-size: 20px;
+    margin: 0.5rem 0;
+    font-weight: 700;
+}
+
+.top-container .score p {
+    text-align: center;
+    width: 60%;
+    font-size: 13px;
+    color: var(--light-laveder);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    
+}
+
+
+.bottom-container .summary {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bottom-container .summary h2 {
+    font-size: 1rem;
+    color: var(--dark-gray-blue);
+    font-weight: 700;
+}
+
+.summary .skills {
+    margin-top: 1rem;
+}
+
+.summary .skills .reaction,
+.summary .skills .memory,
+.summary .skills .verbal,
+.summary .skills .visual {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.9rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    
+}
+
+.summary .skills .reaction {
+    background-color: hsla(0, 100%, 67%, 0.096);
+}
+
+.summary .skills .memory{
+    background-color: hsl(39, 100%, 56%, 0.096);
+}
+
+.summary .skills .verbal{
+    background-color: hsl(166, 100%, 37%, 0.096);
+}
+
+.summary .skills .visual {
+    background-color: hsl(234, 85%, 45%, 0.096);
+}
+
+.summary .skills .reaction h3,
+.summary .skills .memory h3,
+.summary .skills .verbal h3,
+.summary .skills .visual h3 {
+    font-size: 15px;
+    margin-left: -10rem;
+    
+}
+
+.summary .skills p {
+    color: var(--dark-gray-blue);
+}
+
+.summary .skills span {
+    font-weight: 800;
+}
+
+.summary .skills .reaction h3 {
+    color: var(--red);
+}
+
+.summary .skills .memory h3 {
+    color: var(--orange);
+}
+
+.summary .skills .verbal h3{
+    color: var(--green);
+}
+
+.summary .skills .visual h3 {
+    color: var(--blue);
+}
+
+ .button {
+    margin-inline: auto;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.button button {
+    background: var(--dark-gray-blue);
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: 1s ease;
+}
+.button button:hover {
+    background-color: white;
+    color: var(--dark-gray-blue);
+    border: 1px solid var(--dark-gray-blue);
+}
+
+@media screen and (min-width: 1280px) {
+    
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        height: 60%;
+        margin-inline: auto;
+        box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.055);
+        border-radius: 0 25px 25px 0;
+        
+    }
+
+    .wrapper .top-container{
+        width: 50%;
+        height: 100%;
+        border-radius: 25px;
+        
+    }
+
+    .top-container .circle {
+        width: 50%;
+    }
+
+    .top-container .score p {
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    .wrapper .bottom-container {
+        width: 50%;
+        height: 100%;
+        padding: 0.5rem;
+        
+        
+    }
+
+    .summary .skills {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .summary .skills .reaction h3,
+    .summary .skills .memory h3,
+    .summary .skills .verbal h3,
+    .summary .skills .visual h3 {
+        font-size: 13px;
+        margin-right: -7rem;
+        
+    }
+
+    .summary .skills .reaction p,
+    .summary .skills .memory p,
+    .summary .skills .verbal p,
+    .summary .skills .visual p{
+        font-size: 13px;
+        
+    }
+
+     .button button {
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .button button:active {
+        background: linear-gradient(to bottom, var(--grad-slate-blue), var(--grad-royal-blue));
+        
+    }
+
+
+}
+
+.pop-up-alert {
+    z-index: 5;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    transition: 1s ease;
+}
+
+.pop-up-alert .container {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.card {
+     width: 300px;
+     margin: 30px auto;
+     border-radius: 10px;
+     background-color: white;
+     box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.1);
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     flex-direction: column;
+    transform: translateY(-30px);
+    transition: 1s ease;
+     padding: 20px;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    padding: 20px;
+    display: block ;
+    margin: 0 auto 10px;
+}
+
+.card .details {
+    text-align: center;
+    padding: 20px;
+}
+.card .details p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card .details span {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card .details .description {
+    display: block;
+    font-size: 15px;
+    margin-top: 20px;
+}
